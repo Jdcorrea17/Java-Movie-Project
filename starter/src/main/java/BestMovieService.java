@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BestMovieService {
 
-    private Movie movie;
+    private static Movie movie;
 
     @Autowired
     public BestMovieService(@Qualifier("titanicMovie")Movie movie){
