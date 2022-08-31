@@ -1,5 +1,5 @@
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+package com.movieapp;
+
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,4 +1,6 @@
+package com.movieapp;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,5 +35,14 @@ public class MovieController {
         model.addAttribute("BestMovieVote", movieTitle);
 
         return "voteForBestMovie";
+    }
+
+    @Autowired
+    private SessionFactory sessionFactory;
+
+    //In com.movieapp.MovieController, create a method addMovieForm with the request mapping “/addMovieForm”. Simply return “addMovie” to direct to the addMovie.html view.
+    @RequestMapping("/addMovieForm")
+    public String addMovieForm() {
+        return "addMovie";
     }
 }

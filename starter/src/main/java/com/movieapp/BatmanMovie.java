@@ -1,3 +1,4 @@
+package com.movieapp;
 
 import org.springframework.stereotype.Component;
 @Component
